@@ -40,6 +40,10 @@ public class GameController : MonoBehaviour {
             else {
                 coracoes[i].enabled = false;
             }
+
+            if (vida <= 0) {
+                animatorPlayer.SetBool("Morrer", true);
+            }
         }
     }
 
@@ -51,10 +55,6 @@ public class GameController : MonoBehaviour {
         else {
             vida -= dano;
             audioSourceDano.Play();
-        }
-
-        if (vida <= 0) {
-            animatorPlayer.SetBool("Morrer", true);
         }
     }
 

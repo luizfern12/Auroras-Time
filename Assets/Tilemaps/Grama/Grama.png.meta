@@ -25,7 +25,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -209,7 +209,7 @@ TextureImporter:
       name: Grama_3
       rect:
         serializedVersion: 2
-        x: 128
+        x: 160
         y: 192
         width: 32
         height: 32
@@ -230,7 +230,7 @@ TextureImporter:
       name: Grama_4
       rect:
         serializedVersion: 2
-        x: 160
+        x: 192
         y: 192
         width: 32
         height: 32
@@ -251,8 +251,8 @@ TextureImporter:
       name: Grama_5
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
+        x: 32
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -272,7 +272,7 @@ TextureImporter:
       name: Grama_6
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 160
         width: 32
         height: 32
@@ -293,7 +293,7 @@ TextureImporter:
       name: Grama_7
       rect:
         serializedVersion: 2
-        x: 64
+        x: 96
         y: 160
         width: 32
         height: 32
@@ -314,7 +314,7 @@ TextureImporter:
       name: Grama_8
       rect:
         serializedVersion: 2
-        x: 96
+        x: 160
         y: 160
         width: 32
         height: 32
@@ -335,7 +335,7 @@ TextureImporter:
       name: Grama_9
       rect:
         serializedVersion: 2
-        x: 128
+        x: 192
         y: 160
         width: 32
         height: 32
@@ -356,8 +356,8 @@ TextureImporter:
       name: Grama_10
       rect:
         serializedVersion: 2
-        x: 160
-        y: 160
+        x: 32
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -377,8 +377,8 @@ TextureImporter:
       name: Grama_11
       rect:
         serializedVersion: 2
-        x: 192
-        y: 160
+        x: 64
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -398,7 +398,7 @@ TextureImporter:
       name: Grama_12
       rect:
         serializedVersion: 2
-        x: 32
+        x: 96
         y: 128
         width: 32
         height: 32
@@ -419,7 +419,7 @@ TextureImporter:
       name: Grama_13
       rect:
         serializedVersion: 2
-        x: 64
+        x: 160
         y: 128
         width: 32
         height: 32
@@ -440,7 +440,7 @@ TextureImporter:
       name: Grama_14
       rect:
         serializedVersion: 2
-        x: 96
+        x: 192
         y: 128
         width: 32
         height: 32
@@ -461,8 +461,8 @@ TextureImporter:
       name: Grama_15
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
+        x: 32
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -482,8 +482,8 @@ TextureImporter:
       name: Grama_16
       rect:
         serializedVersion: 2
-        x: 160
-        y: 128
+        x: 64
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -503,8 +503,8 @@ TextureImporter:
       name: Grama_17
       rect:
         serializedVersion: 2
-        x: 192
-        y: 128
+        x: 96
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -524,8 +524,8 @@ TextureImporter:
       name: Grama_18
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
+        x: 160
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -545,8 +545,8 @@ TextureImporter:
       name: Grama_19
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
+        x: 192
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -566,8 +566,8 @@ TextureImporter:
       name: Grama_20
       rect:
         serializedVersion: 2
-        x: 96
-        y: 96
+        x: 32
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -587,8 +587,8 @@ TextureImporter:
       name: Grama_21
       rect:
         serializedVersion: 2
-        x: 160
-        y: 64
+        x: 64
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -608,8 +608,8 @@ TextureImporter:
       name: Grama_22
       rect:
         serializedVersion: 2
-        x: 192
-        y: 64
+        x: 160
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -629,7 +629,7 @@ TextureImporter:
       name: Grama_23
       rect:
         serializedVersion: 2
-        x: 32
+        x: 192
         y: 32
         width: 32
         height: 32
@@ -650,8 +650,8 @@ TextureImporter:
       name: Grama_24
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
+        x: 32
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -671,8 +671,8 @@ TextureImporter:
       name: Grama_25
       rect:
         serializedVersion: 2
-        x: 160
-        y: 32
+        x: 64
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -692,8 +692,8 @@ TextureImporter:
       name: Grama_26
       rect:
         serializedVersion: 2
-        x: 192
-        y: 32
+        x: 96
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -713,7 +713,7 @@ TextureImporter:
       name: Grama_27
       rect:
         serializedVersion: 2
-        x: 32
+        x: 128
         y: 0
         width: 32
         height: 32
@@ -730,69 +730,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Grama_28
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f02ef7d0ae0e3e4dae1514ff71981e5
-      internalID: 1272969766
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Grama_29
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1565cbe2dabb1304eaf2d86953506460
-      internalID: 556211315
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Grama_30
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 255863d4503fba64e97248c5572401a0
-      internalID: -23028820
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -804,19 +741,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Grama_28: 1272969766
       Grama_7: 1360385801
       Grama_18: 394525486
       Grama_25: -279290975
       Grama_14: 1594337827
-      Grama_29: 556211315
       Grama_12: -1716809351
       Grama_13: 1341464989
       Grama_20: -989110103
       Grama_3: -712755429
       Grama_17: -1859527767
       Grama_26: 1561777018
-      Grama_30: -23028820
       Grama_5: -305882906
       Grama_9: -856554530
       Grama_2: -1510490261
@@ -835,7 +769,7 @@ TextureImporter:
       Grama_22: 158323658
       Grama_23: 1419660436
       Grama_10: 2084265950
-  spritePackingTag: 
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
   assetBundleName: 

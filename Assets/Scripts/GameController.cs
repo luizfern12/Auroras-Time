@@ -40,4 +40,14 @@ public class GameController : MonoBehaviour {
             }
         }
     }
+
+    public void Dano(int dano) {
+        if (dano == 0) {
+            vida = 0;
+        }
+
+        else {
+            vida -= dano;
+        }
+    }
 }

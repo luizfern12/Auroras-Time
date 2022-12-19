@@ -20,7 +20,7 @@ public class Movimento : MonoBehaviour {
     private float velocidadeMovimento;
 
     private void Update() {
-        estaNoChao = Physics2D.OverlapBox(transformPe.position, new Vector2(0.5f, 0.5f), distanciaCheckarPulo, layerChao);
+        estaNoChao = Physics2D.OverlapBox(transformPe.position, new Vector2(1f, 0.5f), distanciaCheckarPulo, layerChao);
 
         Mover();
         Virar();

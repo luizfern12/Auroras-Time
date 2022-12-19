@@ -4,7 +4,8 @@ public class Movimento : MonoBehaviour {
     [Header("Componentes")]
     [SerializeField] private Rigidbody2D rigidBody;
     [SerializeField] private SpriteRenderer spriteRenderer;
-    [SerializeField] private Transform pe;
+    [SerializeField] private Animator animator;
+    [SerializeField] private Transform transformPe;
     [SerializeField] private LayerMask layerChao;
 
     [Header("Floats")]
@@ -16,11 +17,10 @@ public class Movimento : MonoBehaviour {
     [Header("Bools")]
     [SerializeField] private bool estaNoChao;
 
-
     private float velocidadeMovimento;
 
     private void Update() {
-        estaNoChao = Physics2D.OverlapBox(pe.position, new Vector2(0.5f, 0.5f), distanciaCheckarPulo, layerChao);
+        estaNoChao = Physics2D.OverlapBox(transformPe.position, new Vector2(0.5f, 0.5f), distanciaCheckarPulo, layerChao);
 
         Mover();
         Virar();
@@ -38,10 +38,12 @@ public class Movimento : MonoBehaviour {
 
         if (Input.GetAxisRaw("Horizontal") != 0) {
             rigidBody.velocity = new Vector2(Input.GetAxis("Horizontal") * velocidadeMovimento, rigidBody.velocity.y);
+            animator.SetFloat("Velocidade", velocidadeMovimento);
         }
 
         else {
             rigidBody.velocity = new Vector2(0f, rigidBody.velocity.y);
+            animator.SetFloat("Velocidade", 0f);
         }
     }
 
@@ -59,5 +61,8 @@ public class Movimento : MonoBehaviour {
         if (Input.GetButtonDown("Pulo") && estaNoChao) {
             rigidBody.AddForce(new Vector2(0f, forcaPulo), ForceMode2D.Impulse);
         }
+
+        animator.SetFloat("Velocidade Y", rigidBody.velocity.y);
+        animator.SetBool("NoChao", estaNoChao);
     }
 }

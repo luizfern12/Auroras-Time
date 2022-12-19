@@ -19,15 +19,23 @@ public class Movimento : MonoBehaviour {
 
     [Header("Bools")]
     [SerializeField] private bool estaNoChao;
+    [SerializeField] private bool funcionando;
 
     private float velocidadeMovimento;
 
     private void Update() {
-        estaNoChao = Physics2D.OverlapBox(transformPe.position, new Vector2(1f, 0.5f), distanciaCheckarPulo, layerChao);
+        if (funcionando) {
+            estaNoChao = Physics2D.OverlapBox(transformPe.position, new Vector2(1f, 0.5f), distanciaCheckarPulo, layerChao);
 
-        Mover();
-        Virar();
-        Pulo();
+            Mover();
+            Virar();
+            Pulo();
+        }
+
+        else {
+            rigidBody.velocity = new Vector3(0f, 0f);
+            Destroy(this);
+        }
     }
 
     private void Mover() {

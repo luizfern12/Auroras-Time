@@ -54,11 +54,25 @@ public class GameController : MonoBehaviour {
         }
 
         if (vida <= 0) {
-            animatorPlayer.SetTrigger("Morrer");
+            animatorPlayer.SetBool("Morrer", true);
         }
     }
 
     private void Morrer() {
         changeScene.MudarCena(SceneManager.GetActiveScene().name);       
+    }
+
+    public void GanharVida(int vidaAdd) {
+        if (vidaAdd == 0) {
+            vida = numeroCoracoes;
+        }
+
+        else {
+            vida += vidaAdd;
+        }
+
+        if (vida >= numeroCoracoes) {
+            vida = numeroCoracoes;
+        }
     }
 }

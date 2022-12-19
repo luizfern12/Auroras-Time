@@ -6,7 +6,7 @@ public class ChangeScene : MonoBehaviour {
     [SerializeField] private GameObject telaCarregamento;
     [SerializeField] private GameObject[] objetosParaDesabilitar;
 
-    [SerializeField] private bool loadingFake;
+    [SerializeField] private float tempoLoadingFake;
 
     public void MudarCena(string cena) {
         StartCoroutine(Esperar(cena));
@@ -18,10 +18,8 @@ public class ChangeScene : MonoBehaviour {
         foreach (GameObject objeto in objetosParaDesabilitar) {
             Destroy(objeto);
         }
-
-        if (loadingFake) {
-            yield return new WaitForSeconds(3);
-        }
+        
+        yield return new WaitForSeconds(tempoLoadingFake);
 
         StartCoroutine(CarregarCena(cena));
     }

@@ -8,6 +8,9 @@ public class Movimento : MonoBehaviour {
     [SerializeField] private Transform transformPe;
     [SerializeField] private LayerMask layerChao;
 
+    [Header("Audio Sources")]
+    [SerializeField] private AudioSource audioSourcePulo;
+
     [Header("Floats")]
     [SerializeField] private float distanciaCheckarPulo;
     [SerializeField] private float velocidade = 8f;
@@ -60,6 +63,8 @@ public class Movimento : MonoBehaviour {
     private void Pulo() {
         if (Input.GetButtonDown("Pulo") && estaNoChao) {
             rigidBody.AddForce(new Vector2(0f, forcaPulo), ForceMode2D.Impulse);
+
+            audioSourcePulo.Play();
         }
 
         animator.SetFloat("Velocidade Y", rigidBody.velocity.y);

@@ -1,8 +1,9 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
-    [Header("--- Vida ---")]
+    [Header("Vida")]
     [Range(0, 7)]
     [SerializeField] private int vida;
 
@@ -13,9 +14,10 @@ public class GameController : MonoBehaviour {
     [SerializeField] private Sprite spriteCoracaoCheio;
     [SerializeField] private Sprite spriteCoracaoVazio;
 
-    private void Start() {
-
-    }
+    [Header("Componentes")]
+    [SerializeField] private ChangeScene changeScene;
+    [SerializeField] private Animator animatorPlayer;
+    [SerializeField] private AudioSource audioSourceDano;
 
     private void Update() {
         if (vida > numeroCoracoes) {
@@ -48,6 +50,15 @@ public class GameController : MonoBehaviour {
 
         else {
             vida -= dano;
+            audioSourceDano.Play();
         }
+
+        if (vida <= 0) {
+            animatorPlayer.SetTrigger("Morrer");
+        }
+    }
+
+    private void Morrer() {
+        changeScene.MudarCena(SceneManager.GetActiveScene().name);       
     }
 }
